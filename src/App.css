@@ -1,0 +1,118 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202632;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+
+  main {
+    background-color: #313b47;
+    width: 54rem;
+    max-width: 100%;
+    max-height: 33rem;
+    border-radius: 1.3rem;
+    padding: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    position: relative;
+    h2 {
+      color: #53ffa9;
+      font-size: 1rem;
+      letter-spacing: 0.3rem;
+    }
+    p {
+      color: white;
+      font-size: 3rem;
+      line-height: 3.8rem;
+      padding: 3rem;
+    }
+    .divider {
+      border-bottom: 0.5px solid white;
+      width: 45rem;
+      margin: 3rem 0;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .copyQuote {
+      color: white;
+      font-size: 2rem;
+      position: absolute;
+      bottom: -1.6rem;
+      background-color: #313b47;
+      border: none;
+    }
+
+    .getQuote {
+      background-color: #53ffa9;
+      height: 6.4rem;
+      width: 6.4rem;
+      border-radius: 50%;
+      font-size: 2.4rem;
+      position: absolute;
+      bottom: -3.5rem;
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    display: flex;
+    height: auto;
+    justify-content: stretch;
+    align-items: center;
+    overflow: hidden;
+  }
+  main {
+    margin-top: 5vh;
+    width: 100%;
+    min-height: 90vh;
+    max-height: 100vh;
+    padding: 3rem;
+    box-sizing: border-box;
+  }
+
+  .divider {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .copyQuote {
+    font-size: 1.6rem;
+    bottom: -1.2rem;
+  }
+
+  .getQuote {
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    bottom: -3rem;
+  }
+  h2 {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding: 2rem;
+  }
+}
